@@ -58,6 +58,7 @@ class _Register_SharedState extends State<Register_Shared> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
+                controller: uname,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),

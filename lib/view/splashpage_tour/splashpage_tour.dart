@@ -15,7 +15,7 @@ class Tourism_Splashpage extends StatefulWidget {
 class _Tourism_SplashpageState extends State<Tourism_Splashpage> {
   @override
   void initState(){
-    Timer(const Duration(seconds: 6), () {
+    Timer(const Duration(seconds: 10), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>const Login_Tourism()));
     });
   }

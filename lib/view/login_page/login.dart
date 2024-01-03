@@ -29,10 +29,10 @@ class _Login_SharedState extends State<Login_Shared> {
     //     //check whether the user is already logged in, if getBool('userlogin') is null
     //     // which means user is new
     newuser = preferences.getBool("newuser") ?? true;
-    if (newuser == false) {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const HomeeShared()));
-    }
+    // if (newuser == false) {
+    //   Navigator.push(
+    //       context, MaterialPageRoute(builder: (context) => const HomeeShared()));
+    // }
   }
 
   @override

@@ -12,7 +12,7 @@ class HomeeShared extends StatefulWidget {
 
 class _HomeeSharedState extends State<HomeeShared> {
   late SharedPreferences preferences;
-  String? username;
+  String? name;
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _HomeeSharedState extends State<HomeeShared> {
   void fetchUser() async {
     preferences = await SharedPreferences.getInstance();
     setState(() {
-      username = preferences.getString("uname");
+      name = preferences.getString("name");
     });
   }
 
@@ -42,8 +42,7 @@ class _HomeeSharedState extends State<HomeeShared> {
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Text(
-                "Welcome ",
-                    // "$username",
+                "Welcome  $name",
                 style: GoogleFonts.roboto(
                     fontWeight: FontWeight.bold,
                     color: Colors.blue,
