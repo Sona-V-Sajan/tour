@@ -15,6 +15,7 @@ class _Login_SharedState extends State<Login_Shared> {
   final username = TextEditingController();
   final password = TextEditingController();
   late SharedPreferences preferences;
+  bool passwordhidden = true;
   late bool newuser;
 
   @override
@@ -70,6 +71,7 @@ class _Login_SharedState extends State<Login_Shared> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
+                obscureText:passwordhidden,
                 obscuringCharacter: "*",
                 controller: password,
                 decoration: const InputDecoration(

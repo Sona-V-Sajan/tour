@@ -5,11 +5,11 @@ void main(){
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+  MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Tourism_Splashpage(),
       routes: {
         "details": (context) =>  PageDetails(),
